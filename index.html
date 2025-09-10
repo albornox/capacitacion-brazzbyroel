@@ -29,10 +29,10 @@
             background: white;
             width: 90%;
             max-width: 1200px;
-            height: 80vh;
+            height: 85vh;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            padding: 60px;
+            padding: 40px 60px 80px 60px;
             display: none;
             position: relative;
             overflow-y: auto;
@@ -46,7 +46,7 @@
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
             padding: 30px;
-            margin: -60px -60px 40px -60px;
+            margin: -40px -60px 40px -60px;
             border-radius: 20px 20px 0 0;
         }
         
@@ -69,6 +69,7 @@
         
         .content {
             line-height: 1.6;
+            margin-bottom: 40px;
         }
         
         .content h2 {
@@ -101,6 +102,14 @@
             border-radius: 15px;
             margin: 25px 0;
             border-left: 5px solid #f093fb;
+        }
+        
+        .theory-box {
+            background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #2196f3;
         }
         
         .example-box {
@@ -136,6 +145,24 @@
         .stat-label {
             font-size: 16px;
             opacity: 0.9;
+        }
+        
+        .footer-link {
+            position: absolute;
+            bottom: 20px;
+            right: 60px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer-link a {
+            color: #f093fb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer-link a:hover {
+            text-decoration: underline;
         }
         
         .navigation {
@@ -197,6 +224,10 @@
             font-size: 12px;
             font-weight: bold;
         }
+        
+        .presenter-notes {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -204,7 +235,7 @@
         <!-- Slide 1: Portada -->
         <div class="slide active">
             <div class="slide-header">
-                <div class="slide-number">Slide 1</div>
+                <div class="slide-number">Slide 1 de 16</div>
                 <div class="slide-title">Capacitación SEO On-page</div>
                 <div class="slide-subtitle">BrazzByRoel - Accesorios para Mujer</div>
             </div>
@@ -232,79 +263,118 @@
                         <div class="stat-label">Clusters de búsqueda</div>
                     </div>
                 </div>
+                
+                <div class="presenter-notes">
+                    Comience dando la bienvenida al equipo. Explique que esta capacitación está basada en datos reales del proyecto de BrazzByRoel, no en teoría genérica. Mencione que van a aprender 13 técnicas específicas de SEO On-page que pueden implementar inmediatamente. Resalte que los números en pantalla son reales de su investigación de mercado.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
-        <!-- Slide 2: Contexto del Proyecto -->
+        <!-- Slide 2: ¿Qué es SEO On-page? -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 2</div>
-                <div class="slide-title">Contexto del Proyecto BrazzByRoel</div>
-                <div class="slide-subtitle">Datos específicos de la investigación</div>
+                <div class="slide-number">Slide 2 de 16</div>
+                <div class="slide-title">¿Qué es SEO On-page?</div>
+                <div class="slide-subtitle">Fundamentos teóricos</div>
             </div>
             <div class="content">
-                <h2>Keywords Principales Identificadas</h2>
+                <div class="theory-box">
+                    <h2>Definición</h2>
+                    <p>SEO On-page son todas las optimizaciones que hacemos DENTRO de nuestro sitio web para que Google nos entienda mejor y nos posicione más alto en los resultados de búsqueda.</p>
+                </div>
+
+                <h2>¿Por qué es importante para BrazzByRoel?</h2>
                 <ul>
-                    <li><span class="keyword-tag">earcuff</span> <span class="volume-badge">12,100/mes</span> - Oportunidad principal</li>
-                    <li><span class="keyword-tag">regalo para mujer</span> <span class="volume-badge">9,900/mes</span> - Nueva URL propuesta</li>
-                    <li><span class="keyword-tag">pulseras</span> <span class="volume-badge">8,100/mes</span> - Categoría establecida</li>
-                    <li><span class="keyword-tag">candongas</span> <span class="volume-badge">5,400/mes</span> - Especialidad regional</li>
-                    <li><span class="keyword-tag">aretes</span> <span class="volume-badge">4,400/mes</span> - Categoría amplia</li>
+                    <li><strong>Tráfico gratuito:</strong> Aparecer en Google sin pagar publicidad</li>
+                    <li><strong>Clientes que nos buscan:</strong> Personas que ya quieren comprar accesorios</li>
+                    <li><strong>Competencia ventaja:</strong> Muchos competidores no optimizan correctamente</li>
+                    <li><strong>Resultados medibles:</strong> Podemos ver el crecimiento mes a mes</li>
                 </ul>
 
                 <div class="highlight-box">
-                    <h3>Arquitectura Optimizada</h3>
-                    <p><strong>27 páginas de servicio</strong> estructuradas para capturar tráfico comercial de alta conversión, organizadas en <strong>43 clusters</strong> por intención de búsqueda.</p>
+                    <h3>Diferencia clave</h3>
+                    <p><strong>SEO On-page:</strong> Lo que hacemos EN nuestro sitio web</p>
+                    <p><strong>SEO Off-page:</strong> Lo que otros sitios dicen de nosotros (enlaces externos)</p>
                 </div>
+
+                <div class="presenter-notes">
+                    Use ejemplos sencillos. Explique que es como "arreglar nuestra tienda para que los clientes nos encuentren fácilmente". Mencione que Google es como un bibliotecario gigante que necesita entender de qué trata cada página. Conecte cada concepto con el negocio de accesorios para que sea relevante.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 3: Términos de Búsqueda -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 3</div>
+                <div class="slide-number">Slide 3 de 16</div>
                 <div class="slide-title">1. Términos de Búsqueda Objetivo</div>
-                <div class="slide-subtitle">Implementación específica para BrazzByRoel</div>
+                <div class="slide-subtitle">La base de todo SEO</div>
             </div>
             <div class="content">
-                <h2>Estructura Implementada</h2>
+                <div class="theory-box">
+                    <h2>¿Qué son las palabras clave?</h2>
+                    <p>Son las palabras que nuestros clientes escriben en Google cuando buscan nuestros productos. Por ejemplo: "earcuff", "aretes sin perforación", "accesorios para mujer".</p>
+                </div>
+
+                <h2>Estructura implementada en BrazzByRoel:</h2>
                 
                 <div class="example-box">
-                    <strong>Home:</strong> "accesorios para mujer" (2,400/mes)<br>
-                    URL: brazzbyroel.com/
+                    <strong>Home:</strong> "accesorios para mujer" (2,400 búsquedas/mes)<br>
+                    <strong>Categorías principales:</strong><br>
+                    • "earcuff" (12,100/mes) → Nuestra oportunidad #1<br>
+                    • "pulseras" (8,100/mes)<br>
+                    • "candongas" (5,400/mes)<br>
+                    • "aretes" (4,400/mes)
                 </div>
-
-                <h3>Categorías Principales:</h3>
-                <ul>
-                    <li>"earcuff" (12,100/mes) → /categoria-producto/earcuff/</li>
-                    <li>"pulseras" (8,100/mes) → /categoria-producto/pulseras/</li>
-                    <li>"candongas" (5,400/mes) → /categoria-producto/candongas/</li>
-                    <li>"aretes" (4,400/mes) → /categoria-producto/aretes/</li>
-                </ul>
 
                 <div class="highlight-box">
-                    <h3>Nuevas Oportunidades</h3>
-                    <p><strong>Regalo para mujer:</strong> 9,900 búsquedas mensuales<br>
-                    <strong>Regalos día de la madre:</strong> 5,400 búsquedas mensuales</p>
+                    <h3>Nuevas oportunidades identificadas:</h3>
+                    <p><span class="keyword-tag">regalo para mujer</span> <span class="volume-badge">9,900/mes</span></p>
+                    <p><span class="keyword-tag">regalos día de la madre</span> <span class="volume-badge">5,400/mes</span></p>
                 </div>
+
+                <h3>Regla importante:</h3>
+                <ul>
+                    <li><strong>Una palabra clave principal por página</strong></li>
+                    <li><strong>3-5 palabras clave secundarias</strong> que complementen</li>
+                    <li><strong>Nunca repetir</strong> la misma palabra principal en dos páginas</li>
+                </ul>
+
+                <div class="presenter-notes">
+                    Explique que las palabras clave son como "direcciones" que le damos a Google. Use ejemplos del día a día: "Si buscan 'earcuff', queremos que encuentren nuestra página de earcuff, no la de aretes". Enfatice que los números son búsquedas reales mensuales en Colombia. Mencione que "earcuff" es su mayor oportunidad con 12,100 búsquedas.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 4: Formato del Contenido -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 4</div>
+                <div class="slide-number">Slide 4 de 16</div>
                 <div class="slide-title">2. Formato del Contenido</div>
-                <div class="slide-subtitle">Análisis competitivo aplicado</div>
+                <div class="slide-subtitle">Copiar lo que funciona</div>
             </div>
             <div class="content">
-                <h2>Metodología Aplicada</h2>
-                <ul>
-                    <li>Buscar en Google la keyword principal</li>
-                    <li>Analizar primeros 3 resultados</li>
-                    <li>Identificar formato ganador</li>
-                    <li>Implementar con contenido único</li>
-                </ul>
+                <div class="theory-box">
+                    <h2>¿Por qué importa el formato?</h2>
+                    <p>Google premia el contenido que está organizado como los usuarios prefieren. Si vemos qué funciona en los primeros 3 resultados, podemos copiarlo (con nuestro contenido único).</p>
+                </div>
+
+                <h2>Metodología paso a paso:</h2>
+                <ol>
+                    <li><strong>Buscar</strong> nuestra palabra clave en Google</li>
+                    <li><strong>Analizar</strong> los primeros 3 resultados</li>
+                    <li><strong>Identificar</strong> el patrón común</li>
+                    <li><strong>Aplicar</strong> ese formato con nuestro contenido</li>
+                </ol>
 
                 <div class="example-box">
                     <strong>Ejemplo para "earcuff":</strong><br>
@@ -313,24 +383,36 @@
                     • Estructura: Grid de productos + información educativa
                 </div>
 
-                <h3>Formatos por Tipo de Búsqueda:</h3>
+                <h3>Formatos comunes por tipo:</h3>
                 <ul>
-                    <li><strong>Productos específicos:</strong> Galería + descripción técnica</li>
-                    <li><strong>Categorías amplias:</strong> Grid + guía de compra</li>
-                    <li><strong>Regalos:</strong> Colecciones temáticas + guías</li>
+                    <li><strong>Productos específicos:</strong> Galería + descripción técnica + precios</li>
+                    <li><strong>Categorías amplias:</strong> Grid de productos + guía de compra</li>
+                    <li><strong>Regalos:</strong> Colecciones temáticas + guías de selección</li>
                 </ul>
+
+                <div class="presenter-notes">
+                    Haga una demostración en vivo: busque "earcuff" en Google y muestre los primeros resultados. Señale los elementos comunes. Explique que no estamos copiando contenido, sino estructura. Use analogías: "Es como ver cómo está organizada la tienda más exitosa y aplicar esa organización a la nuestra".
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 5: Títulos SEO -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 5</div>
+                <div class="slide-number">Slide 5 de 16</div>
                 <div class="slide-title">3. Título de SEO (Meta Title)</div>
-                <div class="slide-subtitle">Ejemplos optimizados para BrazzByRoel</div>
+                <div class="slide-subtitle">La primera impresión en Google</div>
             </div>
             <div class="content">
-                <h2>Títulos Implementados</h2>
+                <div class="theory-box">
+                    <h2>¿Qué es el Meta Title?</h2>
+                    <p>Es el título azul que aparece en Google cuando alguien busca. Es lo PRIMERO que ven de nosotros. Debe ser irresistible para generar clics.</p>
+                </div>
+
+                <h2>Títulos optimizados para BrazzByRoel:</h2>
 
                 <div class="example-box">
                     <strong>Home (58 caracteres):</strong><br>
@@ -347,25 +429,38 @@
                     Regalos para Mujer | Accesorios Únicos | BrazzByRoel Bogotá
                 </div>
 
-                <h3>Características Aplicadas:</h3>
+                <h3>Fórmula exitosa:</h3>
                 <ul>
-                    <li>Máximo 60 caracteres</li>
-                    <li>Keyword principal al inicio</li>
-                    <li>Beneficios únicos incluidos</li>
-                    <li>Marca al final para reconocimiento</li>
+                    <li><strong>Palabra clave principal</strong> al inicio</li>
+                    <li><strong>Beneficio único</strong> (envío gratis, plata 925, etc.)</li>
+                    <li><strong>Ubicación</strong> si es relevante (Bogotá)</li>
+                    <li><strong>Marca</strong> al final</li>
+                    <li><strong>Máximo 60 caracteres</strong> (o Google lo corta)</li>
                 </ul>
+
+                <div class="presenter-notes">
+                    Muestre ejemplos reales en Google de títulos bien y mal optimizados. Explique que es como el "escaparate" de la tienda. Si no es atractivo, nadie entra. Mencione que cada carácter cuenta y que el límite de 60 caracteres es estricto. Haga un ejercicio: pida al equipo que escriba un título para "pulseras" siguiendo la fórmula.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 6: Meta Description -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 6</div>
+                <div class="slide-number">Slide 6 de 16</div>
                 <div class="slide-title">4. Meta Description</div>
-                <div class="slide-subtitle">Estrategia de conversión implementada</div>
+                <div class="slide-subtitle">El texto que convence a hacer clic</div>
             </div>
             <div class="content">
-                <h2>Meta Descriptions Optimizadas</h2>
+                <div class="theory-box">
+                    <h2>¿Qué es la Meta Description?</h2>
+                    <p>Es el texto gris que aparece debajo del título en Google. Su trabajo es CONVENCER a la persona para que haga clic en nuestro resultado en lugar del de la competencia.</p>
+                </div>
+
+                <h2>Ejemplos optimizados:</h2>
 
                 <div class="example-box">
                     <strong>Earcuff (156 caracteres):</strong><br>
@@ -373,94 +468,148 @@
                 </div>
 
                 <div class="example-box">
-                    <strong>Regalo para mujer (151 caracteres):</strong><br>
+                    <strong>Regalos (151 caracteres):</strong><br>
                     "Encuentra el regalo perfecto para mujer. Accesorios únicos en plata y oro. Envío express en Colombia. Más de 500 diseños exclusivos."
                 </div>
 
-                <h3>Elementos Clave Incluidos:</h3>
+                <h3>Elementos que SIEMPRE debemos incluir:</h3>
                 <ul>
-                    <li>Descripción específica del producto</li>
-                    <li>Materiales de calidad (plata 925, oro 18k)</li>
-                    <li>Beneficios únicos (hipoalergénicas, ajustables)</li>
-                    <li>Llamada a la acción clara</li>
-                    <li>Cobertura geográfica (Bogotá, Colombia)</li>
+                    <li><strong>Palabra clave principal</strong> naturalmente integrada</li>
+                    <li><strong>Beneficio claro</strong> (materiales, envío, garantía)</li>
+                    <li><strong>Llamada a la acción</strong> ("Compra ahora", "Descubre")</li>
+                    <li><strong>Diferenciador</strong> (plata 925, diseños únicos)</li>
+                    <li><strong>150-160 caracteres</strong> máximo</li>
                 </ul>
+
+                <div class="highlight-box">
+                    <h3>Error común:</h3>
+                    <p>❌ "BrazzByRoel es una empresa de accesorios para mujer, joyería, aretes, collares..."</p>
+                    <p>✅ "Descubre accesorios únicos en plata 925. Envío gratis en Bogotá. Más de 500 diseños exclusivos."</p>
+                </div>
+
+                <div class="presenter-notes">
+                    Explique que la meta description es como el "vendedor" que está parado en la puerta de la tienda convenciendo a entrar. Muestre ejemplos reales en Google. Enfatice que debe sonar natural, no como una lista de palabras clave. Practique con el equipo: pídale que escriban una meta description para "collares" en 2 minutos.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 7: URLs -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 7</div>
-                <div class="slide-title">5. URL - Estructura Implementada</div>
-                <div class="slide-subtitle">Arquitectura optimizada</div>
+                <div class="slide-number">Slide 7 de 16</div>
+                <div class="slide-title">5. URL - Estructura Optimizada</div>
+                <div class="slide-subtitle">Direcciones claras y descriptivas</div>
             </div>
             <div class="content">
-                <h2>Estructura Principal</h2>
-                <div class="example-box">
-                    brazzbyroel.com/categoria-producto/[keyword-principal]/
+                <div class="theory-box">
+                    <h2>¿Por qué importan las URLs?</h2>
+                    <p>Google y los usuarios necesitan entender de qué trata la página solo viendo la dirección web. Una URL clara genera más confianza y clics.</p>
                 </div>
 
-                <h3>URLs Implementadas:</h3>
+                <h2>Estructura implementada:</h2>
+                <div class="example-box">
+                    brazzbyroel.com/categoria-producto/[palabra-clave-principal]/
+                </div>
+
+                <h3>URLs optimizadas vs. URLs problemáticas:</h3>
                 <ul>
-                    <li>/categoria-producto/earcuff/ <span class="volume-badge">12,100 búsquedas</span></li>
-                    <li>/categoria-producto/pulseras/ <span class="volume-badge">8,100 búsquedas</span></li>
-                    <li>/categoria-producto/candongas/ <span class="volume-badge">5,400 búsquedas</span></li>
-                    <li>/categoria-producto/aretes/ <span class="volume-badge">4,400 búsquedas</span></li>
+                    <li>✅ <strong>/categoria-producto/earcuff/</strong> (12,100 búsquedas)</li>
+                    <li>✅ <strong>/categoria-producto/pulseras/</strong> (8,100 búsquedas)</li>
+                    <li>❌ <strong>/prod.php?id=12345&cat=acc</strong></li>
+                    <li>❌ <strong>/categoria-producto-accesorios-mujer-bogota-colombia/</strong></li>
                 </ul>
 
                 <div class="highlight-box">
-                    <h3>URLs Nuevas Propuestas</h3>
-                    <p>/categoria-producto/regalo-para-mujer/ <span class="volume-badge">9,900 búsquedas</span><br>
-                    /categoria-producto/regalos-para-dia-de-la-madre/ <span class="volume-badge">5,400 búsquedas</span></p>
+                    <h3>URLs nuevas propuestas:</h3>
+                    <p>/categoria-producto/regalo-para-mujer/ <span class="volume-badge">9,900 búsquedas</span></p>
+                    <p>/categoria-producto/regalos-para-dia-de-la-madre/ <span class="volume-badge">5,400 búsquedas</span></p>
                 </div>
 
-                <h3>Reglas Aplicadas:</h3>
+                <h3>Reglas de oro:</h3>
                 <ul>
-                    <li>Máximo 3-4 palabras por URL</li>
-                    <li>Keywords exactas de la investigación</li>
-                    <li>Estructura consistente en todo el sitio</li>
+                    <li><strong>Máximo 3-4 palabras</strong></li>
+                    <li><strong>Solo guiones (-)</strong>, no espacios ni acentos</li>
+                    <li><strong>Palabra clave exacta</strong> de la investigación</li>
+                    <li><strong>Estructura consistente</strong> en todo el sitio</li>
                 </ul>
+
+                <div class="presenter-notes">
+                    Compare URLs buenas y malas. Explique que las URLs son como "direcciones de una ciudad": deben ser fáciles de recordar y entender. Mencione que Google usa la URL para entender el contenido. Muestre cómo las URLs complicadas generan desconfianza en usuarios. Haga el ejercicio: si tuvieran que crear URLs para "anillos" y "collares", ¿cómo las harían?
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
-        <!-- Slide 8: Palabras Clave -->
+        <!-- Slide 8: Meta Keywords -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 8</div>
+                <div class="slide-number">Slide 8 de 16</div>
                 <div class="slide-title">6. Etiqueta de Palabras Clave</div>
-                <div class="slide-subtitle">Práctica desactualizada</div>
+                <div class="slide-subtitle">Práctica obsoleta que debemos evitar</div>
             </div>
             <div class="content">
-                <div class="highlight-box" style="background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);">
-                    <h2>❌ NO usar meta keywords</h2>
-                    <p>Google ignora esta etiqueta desde 2009 y puede considerarse spam si se usa incorrectamente.</p>
+                <div class="theory-box">
+                    <h2>¿Qué son las meta keywords?</h2>
+                    <p>Era una etiqueta HTML donde se listaban palabras clave. En el pasado (años 90), Google la usaba para entender el contenido.</p>
                 </div>
 
-                <h2>Alternativas Efectivas:</h2>
+                <div class="highlight-box" style="background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);">
+                    <h2>❌ NO usar meta keywords</h2>
+                    <p><strong>Razón:</strong> Google oficialmente la ignora desde 2009 y puede considerarse spam si se abusa.</p>
+                </div>
+
+                <h2>¿Por qué ya no funciona?</h2>
                 <ul>
-                    <li>Usar keywords naturalmente en H1, H2, H3</li>
-                    <li>Incluir términos relacionados en el contenido</li>
-                    <li>Optimizar texto alt de imágenes</li>
-                    <li>Usar keywords en enlaces internos</li>
+                    <li><strong>Abuso del pasado:</strong> Los sitios llenaban esta etiqueta con keywords irrelevantes</li>
+                    <li><strong>Google evolucionó:</strong> Ahora entiende el contexto del contenido completo</li>
+                    <li><strong>Riesgo actual:</strong> Puede verse como intento de manipulación</li>
+                </ul>
+
+                <h3>Alternativas modernas que SÍ funcionan:</h3>
+                <ul>
+                    <li><strong>H1, H2, H3:</strong> Usar keywords en títulos y subtítulos</li>
+                    <li><strong>Contenido natural:</strong> Integrar términos relacionados en el texto</li>
+                    <li><strong>Alt text:</strong> Optimizar descripciones de imágenes</li>
+                    <li><strong>Enlaces internos:</strong> Usar keywords en textos de enlace</li>
                 </ul>
 
                 <div class="example-box">
-                    <strong>Prioridad en auditoría técnica:</strong><br>
-                    Eliminar etiqueta meta keywords si existe en páginas actuales
+                    <strong>Si encuentran esta etiqueta en su sitio:</strong><br>
+                    &lt;meta name="keywords" content="earcuff, aretes, joyería"&gt;<br>
+                    <strong>Elimínenla completamente</strong>
+                </div>
+
+                <div class="presenter-notes">
+                    Explique la historia: "Antes Google era como un niño que necesitaba que le dijéramos todo. Ahora es como un adulto inteligente que entiende por contexto". Mencione que muchas agencias viejas aún cobran por optimizar meta keywords. Es importante que el equipo sepa que es una práctica obsoleta para no caer en engaños de proveedores.
                 </div>
             </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
+            </div>
         </div>
+
+        <!-- Continúo con el resto de slides... -->
+        <!-- Por brevedad, incluyo las notas más importantes en las siguientes slides -->
 
         <!-- Slide 9: H1 -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 9</div>
+                <div class="slide-number">Slide 9 de 16</div>
                 <div class="slide-title">7. Título Principal (H1)</div>
-                <div class="slide-subtitle">Estructura optimizada por página</div>
+                <div class="slide-subtitle">El título más importante de la página</div>
             </div>
             <div class="content">
-                <h2>H1 Optimizados Implementados</h2>
+                <div class="theory-box">
+                    <h2>¿Qué es el H1?</h2>
+                    <p>Es el título principal que ven los visitantes al entrar a la página. Google lo considera el indicador más importante del tema de la página después del meta title.</p>
+                </div>
+
+                <h2>H1 optimizados para BrazzByRoel:</h2>
 
                 <div class="example-box">
                     <strong>Página Earcuff:</strong><br>
@@ -472,31 +621,44 @@
                     &lt;h1&gt;Regalos para Mujer | Accesorios Únicos y Personalizados&lt;/h1&gt;
                 </div>
 
-                <div class="example-box">
-                    <strong>Página Pulseras:</strong><br>
-                    &lt;h1&gt;Pulseras para Mujer | Diseños Modernos en Plata y Oro&lt;/h1&gt;
+                <h3>Reglas del H1 perfecto:</h3>
+                <ul>
+                    <li><strong>Solo uno por página</strong> (nunca más)</li>
+                    <li><strong>Incluir palabra clave principal</strong></li>
+                    <li><strong>Diferente al meta title</strong> (puede ser más largo)</li>
+                    <li><strong>Describir exactamente</strong> qué encontrará el usuario</li>
+                    <li><strong>Único para cada página</strong> del sitio</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>H1 vs Meta Title:</h3>
+                    <p><strong>Meta Title:</strong> Lo que ve en Google (máximo 60 caracteres)</p>
+                    <p><strong>H1:</strong> Lo que ve al entrar a la página (puede ser más largo)</p>
                 </div>
 
-                <h3>Reglas Aplicadas:</h3>
-                <ul>
-                    <li>Un solo H1 por página</li>
-                    <li>Keyword principal incluida</li>
-                    <li>Diferente al meta title</li>
-                    <li>Contexto específico del contenido</li>
-                    <li>Materiales o características únicas</li>
-                </ul>
+                <div class="presenter-notes">
+                    Explique que el H1 es como el "letrero principal" de cada sección de la tienda. Debe ser claro e inmediato. Muestre ejemplos de sitios web reales y señale dónde está el H1. Mencione que técnicamente solo puede haber uno por página. Ejercicio: pida al equipo que identifique el H1 de la página principal de BrazzByRoel.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 10: Subtítulos -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 10</div>
+                <div class="slide-number">Slide 10 de 16</div>
                 <div class="slide-title">8. Subtítulos (H2-H6)</div>
-                <div class="slide-subtitle">Jerarquía semántica implementada</div>
+                <div class="slide-subtitle">Organizando el contenido jerárquicamente</div>
             </div>
             <div class="content">
-                <h2>Estructura para Página Earcuff</h2>
+                <div class="theory-box">
+                    <h2>¿Para qué sirven los subtítulos?</h2>
+                    <p>Organizan el contenido como el índice de un libro. Ayudan a Google y usuarios a navegar fácilmente por la información.</p>
+                </div>
+
+                <h2>Estructura jerárquica para página Earcuff:</h2>
                 
                 <div class="example-box">
 &lt;h1&gt;Earcuff | Ear Cuff en Plata 925 y Oro 18k&lt;/h1&gt;
@@ -511,23 +673,42 @@
 
 &lt;h2&gt;Comprar Earcuff Online en Colombia&lt;/h2&gt;
   &lt;h3&gt;Envío Gratis en Bogotá&lt;/h3&gt;
-  &lt;h3&gt;Garantía de Calidad&lt;/h3&gt;
                 </div>
 
-                <h3>Keywords Secundarias Incluidas:</h3>
-                <p><span class="keyword-tag">earcuff sin perforación</span> <span class="keyword-tag">earcuff plata 925</span> <span class="keyword-tag">comprar earcuff online</span> <span class="keyword-tag">cómo usar earcuff</span></p>
+                <h3>Keywords secundarias capturadas:</h3>
+                <p><span class="keyword-tag">earcuff sin perforación</span> <span class="keyword-tag">earcuff plata 925</span> <span class="keyword-tag">cómo usar earcuff</span> <span class="keyword-tag">comprar earcuff colombia</span></p>
+
+                <h3>Beneficios de esta estructura:</h3>
+                <ul>
+                    <li><strong>Más keywords:</strong> Indexamos términos relacionados</li>
+                    <li><strong>Mejor experiencia:</strong> Usuarios encuentran información rápido</li>
+                    <li><strong>Featured snippets:</strong> Google puede mostrarnos como respuesta destacada</li>
+                    <li><strong>Tiempo en página:</strong> Contenido organizado = más tiempo navegando</li>
+                </ul>
+
+                <div class="presenter-notes">
+                    Use la analogía del índice de un libro. Explique que cada H2 es como un capítulo y cada H3 como una sección dentro del capítulo. Muestre ejemplos en Wikipedia de cómo usan subtítulos. Mencione que esto ayuda a capturar búsquedas como "cómo usar earcuff" además de solo "earcuff". Ejercicio: pida que estructuren subtítulos para una página de "collares".
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 11: Párrafo de Introducción -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 11</div>
+                <div class="slide-number">Slide 11 de 16</div>
                 <div class="slide-title">9. Párrafo de Introducción</div>
-                <div class="slide-subtitle">Optimizado por categoría</div>
+                <div class="slide-subtitle">Los primeros 40-60 palabras son cruciales</div>
             </div>
             <div class="content">
-                <h2>Párrafos Optimizados (40-60 palabras)</h2>
+                <div class="theory-box">
+                    <h2>¿Por qué importa tanto la introducción?</h2>
+                    <p>Es lo primero que lee el usuario después del H1. Google también le da mucho peso a estas palabras iniciales para entender el tema.</p>
+                </div>
+
+                <h2>Ejemplos optimizados (40-60 palabras):</h2>
 
                 <div class="example-box">
                     <strong>Earcuff (49 palabras):</strong><br>
@@ -539,25 +720,44 @@
                     "Encuentra el regalo perfecto para mujer en nuestra colección de accesorios únicos. Más de 500 diseños en plata 925 y oro 18k, desde aretes hasta pulseras personalizadas. Envío express en toda Colombia para sorprender en cualquier ocasión especial."
                 </div>
 
-                <h3>Elementos Optimizados:</h3>
+                <h3>Fórmula del párrafo perfecto:</h3>
                 <ul>
-                    <li>Keyword principal en primeras palabras</li>
-                    <li>Propuesta de valor clara</li>
-                    <li>Materiales específicos mencionados</li>
-                    <li>Cobertura geográfica incluida</li>
+                    <li><strong>Palabra clave principal</strong> en las primeras 10 palabras</li>
+                    <li><strong>Beneficio único</strong> o propuesta de valor</li>
+                    <li><strong>Materiales específicos</strong> (plata 925, oro 18k)</li>
+                    <li><strong>Ubicación geográfica</strong> (Bogotá, Colombia)</li>
+                    <li><strong>Llamada a la acción sutil</strong></li>
                 </ul>
+
+                <div class="highlight-box">
+                    <h3>Error común:</h3>
+                    <p>❌ "Bienvenidos a BrazzByRoel, somos una empresa dedicada a la venta de accesorios..."</p>
+                    <p>✅ "Los earcuff son la tendencia en accesorios para mujer que no requiere perforación..."</p>
+                </div>
+
+                <div class="presenter-notes">
+                    Explique que es como el "elevator pitch" de cada página. En 40-60 palabras deben convencer y explicar de qué trata la página. Mencione que Google a menudo usa este texto para los snippets. Haga el ejercicio: cronometrar 2 minutos para que escriban un párrafo de introducción para "pulseras" siguiendo la fórmula. Luego revisen y mejoren juntos.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 12: Lecturabilidad -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 12</div>
+                <div class="slide-number">Slide 12 de 16</div>
                 <div class="slide-title">10. Lecturabilidad</div>
-                <div class="slide-subtitle">Formato optimizado para ecommerce</div>
+                <div class="slide-subtitle">Formato que mantiene a los usuarios leyendo</div>
             </div>
             <div class="content">
-                <h2>Estructura de Páginas de Categoría</h2>
+                <div class="theory-box">
+                    <h2>¿Por qué importa la lecturabilidad?</h2>
+                    <p>Si el texto es difícil de leer, los usuarios se van rápido. Esto le dice a Google que nuestro contenido no es útil, bajando nuestro posicionamiento.</p>
+                </div>
+
+                <h2>Estructura optimizada para ecommerce:</h2>
                 <ol>
                     <li><strong>H1 + párrafo introducción</strong> (40-60 palabras)</li>
                     <li><strong>Grid de productos</strong> (imágenes optimizadas)</li>
@@ -566,30 +766,48 @@
                     <li><strong>H2: Envío y garantías</strong> (información práctica)</li>
                 </ol>
 
-                <h3>Formato Optimizado:</h3>
+                <h3>Reglas de formato:</h3>
                 <ul>
-                    <li>Máximo 3 líneas por párrafo en móvil</li>
-                    <li>45-75 caracteres por línea</li>
-                    <li>Listas con bullets para características</li>
-                    <li>Texto en negrilla para beneficios clave</li>
+                    <li><strong>Párrafos:</strong> Máximo 3 líneas en móvil</li>
+                    <li><strong>Líneas:</strong> 45-75 caracteres por línea</li>
+                    <li><strong>Listas:</strong> Usar bullets para características</li>
+                    <li><strong>Negrillas:</strong> Destacar beneficios clave</li>
+                    <li><strong>Espacios:</strong> Respirar entre secciones</li>
                 </ul>
 
                 <div class="highlight-box">
-                    <h3>Material Multimedia</h3>
-                    <p>Galería de productos, imágenes de modelo, close-ups de detalles, videos de uso</p>
+                    <h3>Material multimedia esencial:</h3>
+                    <ul>
+                        <li>Galería de productos (mínimo 8 productos visibles)</li>
+                        <li>Imágenes de modelo usando los accesorios</li>
+                        <li>Close-ups de detalles y materiales</li>
+                        <li>Videos cortos de cómo usar (especialmente earcuff)</li>
+                    </ul>
                 </div>
+
+                <div class="presenter-notes">
+                    Muestre ejemplos de páginas bien y mal formateadas. Explique que la gente "escanea" antes de leer. Use analogías: "Como un periódico bien diseñado vs. un muro de texto". Mencione que en móvil es aún más importante porque la pantalla es pequeña. Ejercicio: mostrar una página actual de BrazzByRoel y pedirles que identifiquen qué se puede mejorar en formato.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 13: Optimización de Imágenes -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 13</div>
+                <div class="slide-number">Slide 13 de 16</div>
                 <div class="slide-title">11. Optimización de Imágenes</div>
-                <div class="slide-subtitle">Específico para ecommerce</div>
+                <div class="slide-subtitle">Velocidad + SEO + Accesibilidad</div>
             </div>
             <div class="content">
-                <h2>Nombres de Archivo Optimizados</h2>
+                <div class="theory-box">
+                    <h2>¿Por qué optimizar imágenes?</h2>
+                    <p>Las imágenes pesadas hacen que el sitio cargue lento. Google penaliza sitios lentos. Además, las imágenes bien optimizadas aparecen en Google Imágenes, generando tráfico extra.</p>
+                </div>
+
+                <h2>Nombres de archivo optimizados:</h2>
                 <div class="example-box">
 earcuff-plata-925-mujer-brazzbyroel.jpg
 pulsera-oro-18k-ajustable-bogota.jpg
@@ -597,91 +815,142 @@ candongas-grandes-plata-colombia.jpg
 regalo-mujer-accesorios-personalizados.jpg
                 </div>
 
-                <h3>Texto Alternativo por Categoría</h3>
+                <h3>Texto alternativo (Alt Text) por categoría:</h3>
                 <div class="example-box">
                     <strong>Earcuff:</strong><br>
                     alt="Earcuff de plata 925 sin perforación para mujer - BrazzByRoel"<br>
-                    alt="Ear cuff dorado modelo moderno para oreja izquierda"
+                    alt="Ear cuff dorado modelo moderno para oreja izquierda"<br><br>
+                    <strong>Regalos:</strong><br>
+                    alt="Set de regalo para mujer con aretes y pulsera en caja elegante"<br>
+                    alt="Accesorios personalizados como regalo para día de la madre"
                 </div>
 
-                <h3>Especificaciones Técnicas:</h3>
+                <h3>Especificaciones técnicas:</h3>
                 <ul>
-                    <li><strong>Peso máximo:</strong> 150kb (TinyJPG)</li>
-                    <li><strong>Formato:</strong> WebP con fallback JPG</li>
+                    <li><strong>Peso:</strong> Máximo 150kb (usar TinyJPG o similar)</li>
+                    <li><strong>Formato:</strong> WebP con fallback JPG para compatibilidad</li>
                     <li><strong>Dimensiones:</strong> 800x800px productos, 1200x600px categorías</li>
-                    <li><strong>Keywords incluidas</strong> en nombre y alt text</li>
+                    <li><strong>Keywords:</strong> Incluir en nombre y alt text naturalmente</li>
                 </ul>
+
+                <div class="highlight-box">
+                    <h3>Proceso de optimización:</h3>
+                    <ol>
+                        <li>Redimensionar imagen al tamaño correcto</li>
+                        <li>Comprimir con TinyJPG</li>
+                        <li>Renombrar con keywords descriptivas</li>
+                        <li>Agregar alt text detallado</li>
+                    </ol>
+                </div>
+
+                <div class="presenter-notes">
+                    Haga una demostración en vivo con TinyJPG. Muestre cómo una imagen de 2MB se reduce a 150kb sin perder calidad visible. Explique que el alt text ayuda a personas con discapacidad visual y también al SEO. Mencione que muchas ventas vienen de Google Imágenes. Ejercicio: pedirles que optimicen una imagen de producto siguiendo el proceso.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 14: Extensión y Keywords -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 14</div>
+                <div class="slide-number">Slide 14 de 16</div>
                 <div class="slide-title">12-13. Extensión y Uso de Keywords</div>
-                <div class="slide-subtitle">Integración natural y longitudes óptimas</div>
+                <div class="slide-subtitle">¿Cuánto escribir y cómo distribuir palabras clave?</div>
             </div>
             <div class="content">
-                <h2>Extensiones Optimizadas</h2>
+                <div class="theory-box">
+                    <h2>La regla del contenido suficiente</h2>
+                    <p>No es sobre cantidad, sino sobre responder completamente la intención de búsqueda. Mínimo 300 palabras, pero lo ideal se determina analizando la competencia.</p>
+                </div>
+
+                <h2>Extensiones por tipo de página:</h2>
                 <ul>
-                    <li><strong>Categorías principales:</strong> 600-800 palabras</li>
-                    <li><strong>Nuevas oportunidades:</strong> 800-1,200 palabras</li>
-                    <li><strong>Subcategorías:</strong> 400-600 palabras</li>
+                    <li><strong>Categorías principales:</strong> 600-800 palabras (ej: earcuff)</li>
+                    <li><strong>Nuevas oportunidades:</strong> 800-1,200 palabras (ej: regalos)</li>
+                    <li><strong>Subcategorías:</strong> 400-600 palabras (ej: topitos)</li>
+                    <li><strong>Productos individuales:</strong> 300-500 palabras</li>
                 </ul>
 
-                <h2>Distribución de Keywords</h2>
                 <div class="highlight-box">
-                    <h3>Ejemplo: Página Earcuff (800 palabras)</h3>
+                    <h3>Distribución de keywords - Ejemplo Earcuff (800 palabras):</h3>
                     <ul>
-                        <li>"earcuff" aparece 8-12 veces naturalmente</li>
-                        <li>"ear cuff" 4-6 veces (variación)</li>
+                        <li>"earcuff" aparece 8-12 veces (1.5% densidad)</li>
+                        <li>"ear cuff" 4-6 veces (variación natural)</li>
                         <li>"earcuff plata" 3-4 veces</li>
                         <li>"sin perforación" 2-3 veces</li>
                     </ul>
                 </div>
 
-                <h3>Ubicaciones Estratégicas:</h3>
-                <ul>
-                    <li>H1: Keyword principal + modificador</li>
-                    <li>Primer párrafo: Keyword en primeras 25 palabras</li>
-                    <li>H2 y H3: Keywords secundarias</li>
-                    <li>Último párrafo: Keyword + CTA</li>
-                </ul>
+                <h3>Ubicaciones estratégicas para keywords:</h3>
+                <ol>
+                    <li><strong>H1:</strong> Keyword principal + modificador</li>
+                    <li><strong>Primer párrafo:</strong> Keyword en primeras 25 palabras</li>
+                    <li><strong>H2 y H3:</strong> Keywords secundarias naturalmente</li>
+                    <li><strong>Último párrafo:</strong> Keyword + llamada a la acción</li>
+                    <li><strong>Alt text:</strong> Keywords en descripciones de imágenes</li>
+                </ol>
+
+                <div class="example-box">
+                    <strong>❌ Keyword stuffing:</strong><br>
+                    "Nuestros earcuff son los mejores earcuff en Colombia. Compra earcuff aquí."<br><br>
+                    <strong>✅ Uso natural:</strong><br>
+                    "Nuestros earcuff son perfectos para looks modernos. La colección incluye diseños únicos sin perforación."
+                </div>
+
+                <div class="presenter-notes">
+                    Explique que Google 2024 es muy inteligente y detecta keyword stuffing fácilmente. Use la regla: "Si suena raro al leerlo en voz alta, está mal". Enseñe a verificar densidad: dividir apariciones entre total de palabras. Ejercicio: darles un párrafo con keyword stuffing y pedirles que lo reescriban naturalmente.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
         <!-- Slide 15: Checklist y Resultados -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 15</div>
-                <div class="slide-title">14. Checklist y Resultados Esperados</div>
-                <div class="slide-subtitle">Implementación y seguimiento</div>
+                <div class="slide-number">Slide 15 de 16</div>
+                <div class="slide-title">Checklist de Implementación</div>
+                <div class="slide-subtitle">Verificación paso a paso</div>
             </div>
             <div class="content">
-                <h2>Páginas Prioritarias (Fase 1)</h2>
+                <h2>Páginas prioritarias (implementar primero):</h2>
                 <ul>
-                    <li>✅ Earcuff (12,100 búsquedas/mes)</li>
-                    <li>🆕 Regalo para mujer (9,900/mes) - NUEVA URL</li>
+                    <li>✅ Earcuff (12,100 búsquedas/mes) - Mayor oportunidad</li>
+                    <li>🆕 Regalo para mujer (9,900/mes) - NUEVA URL a crear</li>
                     <li>✅ Pulseras (8,100/mes)</li>
                     <li>✅ Candongas (5,400/mes)</li>
                     <li>✅ Aretes (4,400/mes)</li>
                 </ul>
 
-                <h2>Checklist de Implementación</h2>
                 <div class="example-box">
-□ Keyword principal definida<br>
-□ Título SEO de 50-60 caracteres<br>
+                    <strong>Checklist por página (imprimir y usar):</strong><br>
+□ Keyword principal definida y verificada en research<br>
+□ Título SEO de 50-60 caracteres con keyword<br>
 □ Meta description 150-160 caracteres con CTA<br>
 □ URL limpia con keyword principal<br>
 □ H1 único con keyword principal<br>
 □ Estructura H2-H6 con keywords secundarias<br>
 □ Párrafo introducción 40-60 palabras<br>
-□ Imágenes optimizadas con alt text<br>
-□ Keywords integradas naturalmente (1-2% densidad)
+□ Contenido mínimo según tipo de página<br>
+□ Imágenes optimizadas (&lt;150kb) con alt text<br>
+□ Keywords integradas naturalmente (1-2% densidad)<br>
+□ Enlaces internos con anchor text optimizado<br>
+□ Schema markup implementado (opcional avanzado)
                 </div>
 
-                <h2>Resultados Esperados (6 meses)</h2>
+                <h2>Resultados esperados por trimestre:</h2>
                 <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">3 meses</div>
+                        <div class="stat-label">5,000-8,000 visitantes/mes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6 meses</div>
+                        <div class="stat-label">12,000-18,000 visitantes/mes</div>
+                    </div>
                     <div class="stat-card">
                         <div class="stat-number">Top 3</div>
                         <div class="stat-label">para "earcuff"</div>
@@ -690,65 +959,83 @@ regalo-mujer-accesorios-personalizados.jpg
                         <div class="stat-number">Top 5</div>
                         <div class="stat-label">para "regalo para mujer"</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">keywords en Top 10</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">18,000</div>
-                        <div class="stat-label">visitantes/mes orgánicos</div>
-                    </div>
                 </div>
 
-                <div class="highlight-box">
-                    <h3>Próximos Pasos Inmediatos</h3>
-                    <ol>
-                        <li>Revisar auditoría técnica - corregir issues críticos</li>
-                        <li>Implementar títulos y metas - páginas prioritarias primero</li>
-                        <li>Crear URLs nuevas - regalo para mujer y día de la madre</li>
-                        <li>Aplicar estructuras H1-H6 - usar briefs entregados</li>
-                        <li>Optimizar contenido existente - integrar keywords secundarias</li>
-                    </ol>
+                <div class="presenter-notes">
+                    Entregue el checklist impreso a cada persona. Explique que el SEO toma tiempo - no hay resultados inmediatos. Los primeros cambios se ven en 2-3 meses. Recalque que deben empezar por earcuff porque tiene el mayor potencial. Establezca expectativas realistas: es un proceso constante, no una tarea única.
                 </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
 
-        <!-- Slide 16: Recursos y Conclusión -->
+        <!-- Slide 16: Próximos Pasos -->
         <div class="slide">
             <div class="slide-header">
-                <div class="slide-number">Slide 16</div>
-                <div class="slide-title">Recursos de Implementación</div>
-                <div class="slide-subtitle">Todo listo para usar</div>
+                <div class="slide-number">Slide 16 de 16</div>
+                <div class="slide-title">Próximos Pasos y Recursos</div>
+                <div class="slide-subtitle">Plan de implementación inmediata</div>
             </div>
             <div class="content">
-                <h2>Documentos Entregados</h2>
-                <ul>
-                    <li>✅ Excel completo con 1,338 keywords investigadas</li>
-                    <li>✅ 43 clusters organizados por intención de búsqueda</li>
-                    <li>✅ 27 estructuras de headings detalladas por página</li>
-                    <li>✅ Auditoría técnica con 993 factores evaluados</li>
-                    <li>✅ 2 URLs nuevas con potencial de 15,300 búsquedas adicionales</li>
-                    <li>✅ Títulos y meta descriptions optimizados para todas las páginas</li>
-                </ul>
+                <h2>Plan de acción - próximas 4 semanas:</h2>
+                
+                <div class="highlight-box">
+                    <h3>Semana 1: Auditoría y preparación</h3>
+                    <ul>
+                        <li>Revisar auditoría técnica entregada</li>
+                        <li>Corregir issues críticos (prioridad ALTA)</li>
+                        <li>Instalar herramientas de medición</li>
+                    </ul>
+                </div>
 
                 <div class="highlight-box">
-                    <h2>🎯 Potencial Total Identificado</h2>
-                    <p style="font-size: 24px; text-align: center; font-weight: bold;">
-                        54,180 búsquedas mensuales en páginas de servicio
-                    </p>
+                    <h3>Semana 2-3: Implementación prioritaria</h3>
+                    <ul>
+                        <li>Optimizar página de earcuff completa</li>
+                        <li>Crear nueva URL: regalo-para-mujer</li>
+                        <li>Actualizar títulos y metas de top 5 páginas</li>
+                    </ul>
                 </div>
 
-                <h2>Herramientas de Seguimiento</h2>
+                <div class="highlight-box">
+                    <h3>Semana 4: Monitoreo y ajustes</h3>
+                    <ul>
+                        <li>Verificar indexación en Google Search Console</li>
+                        <li>Revisar velocidad de carga post-optimización</li>
+                        <li>Planificar siguiente fase de páginas</li>
+                    </ul>
+                </div>
+
+                <h2>Recursos disponibles:</h2>
                 <ul>
-                    <li><strong>Google Search Console:</strong> Impresiones y clics por keyword</li>
-                    <li><strong>Google Analytics:</strong> Tráfico orgánico y conversiones</li>
-                    <li><strong>Semrush/Ahrefs:</strong> Posiciones de keywords objetivo</li>
-                    <li><strong>PageSpeed Insights:</strong> Velocidad de carga</li>
+                    <li>✅ Excel con 1,338 keywords investigadas</li>
+                    <li>✅ 43 clusters organizados por intención</li>
+                    <li>✅ 27 estructuras de headings detalladas</li>
+                    <li>✅ Auditoría técnica con 993 factores</li>
+                    <li>✅ Checklist de implementación (esta presentación)</li>
                 </ul>
 
-                <div style="text-align: center; margin-top: 40px; font-size: 20px; color: #5a67d8;">
-                    <strong>¡Tu ecommerce ya tiene bases sólidas para dominar las búsquedas comerciales!</strong>
+                <div class="theory-box">
+                    <h2>Herramientas gratuitas recomendadas:</h2>
+                    <ul>
+                        <li><strong>Google Search Console:</strong> Monitoreo de posiciones</li>
+                        <li><strong>Google Analytics:</strong> Tráfico orgánico</li>
+                        <li><strong>TinyJPG:</strong> Optimización de imágenes</li>
+                        <li><strong>PageSpeed Insights:</strong> Velocidad de carga</li>
+                    </ul>
                 </div>
+
+                <div style="text-align: center; margin-top: 40px; font-size: 24px; color: #5a67d8;">
+                    <strong>¡Potencial total: 54,180 búsquedas mensuales esperándolos!</strong>
+                </div>
+
+                <div class="presenter-notes">
+                    Termine con motivación pero siendo realista. Recuerde que tienen todas las herramientas y datos necesarios. Establezca el próximo punto de revisión (en 1 mes). Ofrezca su disponibilidad para resolver dudas durante la implementación. Enfatice que este es el comienzo de un proceso continuo, no un proyecto que se termina.
+                </div>
+            </div>
+            <div class="footer-link">
+                Desarrollado por <a href="https://ranknroll.co/" target="_blank">Ranknroll.co agencia SEO y SEM</a>
             </div>
         </div>
     </div>
@@ -778,7 +1065,6 @@ regalo-mujer-accesorios-personalizados.jpg
             
             current.textContent = currentSlide;
             
-            // Update navigation buttons
             document.getElementById('prev-btn').disabled = currentSlide === 1;
             document.getElementById('next-btn').disabled = currentSlide === totalSlides;
         }
@@ -797,7 +1083,6 @@ regalo-mujer-accesorios-personalizados.jpg
             }
         }
 
-        // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (e.key === 'ArrowRight' || e.key === ' ') {
                 e.preventDefault();
@@ -808,7 +1093,6 @@ regalo-mujer-accesorios-personalizados.jpg
             }
         });
 
-        // Initialize
         document.getElementById('total-slides').textContent = totalSlides;
         showSlide(1);
     </script>

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación SEO On-page - BrazzByRoel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow: hidden;
+        }
+        
+        .presentation {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slide {
+            background: white;
+            width: 90%;
+            max-width: 1200px;
+            height: 80vh;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 60px;
+            display: none;
+            position: relative;
+            overflow-y: auto;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        .slide-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            margin: -60px -60px 40px -60px;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .slide-number {
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        
+        .slide-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .slide-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            line-height: 1.6;
+        }
+        
+        .content h2 {
+            color: #5a67d8;
+            font-size: 28px;
+            margin: 30px 0 20px 0;
+            border-left: 5px solid #f093fb;
+            padding-left: 20px;
+        }
+        
+        .content h3 {
+            color: #4a5568;
+            font-size: 22px;
+            margin: 25px 0 15px 0;
+        }
+        
+        .content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        .content li {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #f093fb;
+        }
+        
+        .example-box {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            background: #5a67d8;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #4c51bf;
+            transform: translateY(-2px);
+        }
+        
+        .nav-btn:disabled {
+            background: #a0aec0;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        
+        .keyword-tag {
+            background: #f093fb;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+            margin: 5px 5px 5px 0;
+            display: inline-block;
+        }
+        
+        .volume-badge {
+            background: #48bb78;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Portada -->
+        <div class="slide active">
+            <div class="slide-header">
+                <div class="slide-number">Slide 1</div>
+                <div class="slide-title">Capacitación SEO On-page</div>
+                <div class="slide-subtitle">BrazzByRoel - Accesorios para Mujer</div>
+            </div>
+            <div class="content">
+                <div class="highlight-box">
+                    <h2>Optimización de contenidos basada en datos reales</h2>
+                    <p>Implementación estratégica para el crecimiento orgánico de BrazzByRoel</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,338</div>
+                        <div class="stat-label">Keywords investigadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">54,180</div>
+                        <div class="stat-label">Búsquedas mensuales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">27</div>
+                        <div class="stat-label">Páginas optimizadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">43</div>
+                        <div class="stat-label">Clusters de búsqueda</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Contexto del Proyecto -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 2</div>
+                <div class="slide-title">Contexto del Proyecto BrazzByRoel</div>
+                <div class="slide-subtitle">Datos específicos de la investigación</div>
+            </div>
+            <div class="content">
+                <h2>Keywords Principales Identificadas</h2>
+                <ul>
+                    <li><span class="keyword-tag">earcuff</span> <span class="volume-badge">12,100/mes</span> - Oportunidad principal</li>
+                    <li><span class="keyword-tag">regalo para mujer</span> <span class="volume-badge">9,900/mes</span> - Nueva URL propuesta</li>
+                    <li><span class="keyword-tag">pulseras</span> <span class="volume-badge">8,100/mes</span> - Categoría establecida</li>
+                    <li><span class="keyword-tag">candongas</span> <span class="volume-badge">5,400/mes</span> - Especialidad regional</li>
+                    <li><span class="keyword-tag">aretes</span> <span class="volume-badge">4,400/mes</span> - Categoría amplia</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Arquitectura Optimizada</h3>
+                    <p><strong>27 páginas de servicio</strong> estructuradas para capturar tráfico comercial de alta conversión, organizadas en <strong>43 clusters</strong> por intención de búsqueda.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Términos de Búsqueda -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 3</div>
+                <div class="slide-title">1. Términos de Búsqueda Objetivo</div>
+                <div class="slide-subtitle">Implementación específica para BrazzByRoel</div>
+            </div>
+            <div class="content">
+                <h2>Estructura Implementada</h2>
+                
+                <div class="example-box">
+                    <strong>Home:</strong> "accesorios para mujer" (2,400/mes)<br>
+                    URL: brazzbyroel.com/
+                </div>
+
+                <h3>Categorías Principales:</h3>
+                <ul>
+                    <li>"earcuff" (12,100/mes) → /categoria-producto/earcuff/</li>
+                    <li>"pulseras" (8,100/mes) → /categoria-producto/pulseras/</li>
+                    <li>"candongas" (5,400/mes) → /categoria-producto/candongas/</li>
+                    <li>"aretes" (4,400/mes) → /categoria-producto/aretes/</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Nuevas Oportunidades</h3>
+                    <p><strong>Regalo para mujer:</strong> 9,900 búsquedas mensuales<br>
+                    <strong>Regalos día de la madre:</strong> 5,400 búsquedas mensuales</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Formato del Contenido -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 4</div>
+                <div class="slide-title">2. Formato del Contenido</div>
+                <div class="slide-subtitle">Análisis competitivo aplicado</div>
+            </div>
+            <div class="content">
+                <h2>Metodología Aplicada</h2>
+                <ul>
+                    <li>Buscar en Google la keyword principal</li>
+                    <li>Analizar primeros 3 resultados</li>
+                    <li>Identificar formato ganador</li>
+                    <li>Implementar con contenido único</li>
+                </ul>
+
+                <div class="example-box">
+                    <strong>Ejemplo para "earcuff":</strong><br>
+                    • Formato ganador: Página de categoría con galería<br>
+                    • Elementos clave: Imágenes grandes, filtros, descripción breve<br>
+                    • Estructura: Grid de productos + información educativa
+                </div>
+
+                <h3>Formatos por Tipo de Búsqueda:</h3>
+                <ul>
+                    <li><strong>Productos específicos:</strong> Galería + descripción técnica</li>
+                    <li><strong>Categorías amplias:</strong> Grid + guía de compra</li>
+                    <li><strong>Regalos:</strong> Colecciones temáticas + guías</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5: Títulos SEO -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 5</div>
+                <div class="slide-title">3. Título de SEO (Meta Title)</div>
+                <div class="slide-subtitle">Ejemplos optimizados para BrazzByRoel</div>
+            </div>
+            <div class="content">
+                <h2>Títulos Implementados</h2>
+
+                <div class="example-box">
+                    <strong>Home (58 caracteres):</strong><br>
+                    Accesorios para Mujer | Joyería y Accesorios | BrazzByRoel
+                </div>
+
+                <div class="example-box">
+                    <strong>Earcuff (59 caracteres):</strong><br>
+                    Earcuff | Ear Cuff Plata y Oro | Envío Gratis | BrazzByRoel
+                </div>
+
+                <div class="example-box">
+                    <strong>Regalos (60 caracteres):</strong><br>
+                    Regalos para Mujer | Accesorios Únicos | BrazzByRoel Bogotá
+                </div>
+
+                <h3>Características Aplicadas:</h3>
+                <ul>
+                    <li>Máximo 60 caracteres</li>
+                    <li>Keyword principal al inicio</li>
+                    <li>Beneficios únicos incluidos</li>
+                    <li>Marca al final para reconocimiento</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 6: Meta Description -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 6</div>
+                <div class="slide-title">4. Meta Description</div>
+                <div class="slide-subtitle">Estrategia de conversión implementada</div>
+            </div>
+            <div class="content">
+                <h2>Meta Descriptions Optimizadas</h2>
+
+                <div class="example-box">
+                    <strong>Earcuff (156 caracteres):</strong><br>
+                    "Descubre nuestra colección de earcuff en plata 925 y oro. Diseños únicos que no necesitan perforación. Envío gratis en Bogotá. ¡Compra ahora!"
+                </div>
+
+                <div class="example-box">
+                    <strong>Regalo para mujer (151 caracteres):</strong><br>
+                    "Encuentra el regalo perfecto para mujer. Accesorios únicos en plata y oro. Envío express en Colombia. Más de 500 diseños exclusivos."
+                </div>
+
+                <h3>Elementos Clave Incluidos:</h3>
+                <ul>
+                    <li>Descripción específica del producto</li>
+                    <li>Materiales de calidad (plata 925, oro 18k)</li>
+                    <li>Beneficios únicos (hipoalergénicas, ajustables)</li>
+                    <li>Llamada a la acción clara</li>
+                    <li>Cobertura geográfica (Bogotá, Colombia)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 7: URLs -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 7</div>
+                <div class="slide-title">5. URL - Estructura Implementada</div>
+                <div class="slide-subtitle">Arquitectura optimizada</div>
+            </div>
+            <div class="content">
+                <h2>Estructura Principal</h2>
+                <div class="example-box">
+                    brazzbyroel.com/categoria-producto/[keyword-principal]/
+                </div>
+
+                <h3>URLs Implementadas:</h3>
+                <ul>
+                    <li>/categoria-producto/earcuff/ <span class="volume-badge">12,100 búsquedas</span></li>
+                    <li>/categoria-producto/pulseras/ <span class="volume-badge">8,100 búsquedas</span></li>
+                    <li>/categoria-producto/candongas/ <span class="volume-badge">5,400 búsquedas</span></li>
+                    <li>/categoria-producto/aretes/ <span class="volume-badge">4,400 búsquedas</span></li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>URLs Nuevas Propuestas</h3>
+                    <p>/categoria-producto/regalo-para-mujer/ <span class="volume-badge">9,900 búsquedas</span><br>
+                    /categoria-producto/regalos-para-dia-de-la-madre/ <span class="volume-badge">5,400 búsquedas</span></p>
+                </div>
+
+                <h3>Reglas Aplicadas:</h3>
+                <ul>
+                    <li>Máximo 3-4 palabras por URL</li>
+                    <li>Keywords exactas de la investigación</li>
+                    <li>Estructura consistente en todo el sitio</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Palabras Clave -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 8</div>
+                <div class="slide-title">6. Etiqueta de Palabras Clave</div>
+                <div class="slide-subtitle">Práctica desactualizada</div>
+            </div>
+            <div class="content">
+                <div class="highlight-box" style="background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);">
+                    <h2>❌ NO usar meta keywords</h2>
+                    <p>Google ignora esta etiqueta desde 2009 y puede considerarse spam si se usa incorrectamente.</p>
+                </div>
+
+                <h2>Alternativas Efectivas:</h2>
+                <ul>
+                    <li>Usar keywords naturalmente en H1, H2, H3</li>
+                    <li>Incluir términos relacionados en el contenido</li>
+                    <li>Optimizar texto alt de imágenes</li>
+                    <li>Usar keywords en enlaces internos</li>
+                </ul>
+
+                <div class="example-box">
+                    <strong>Prioridad en auditoría técnica:</strong><br>
+                    Eliminar etiqueta meta keywords si existe en páginas actuales
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: H1 -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 9</div>
+                <div class="slide-title">7. Título Principal (H1)</div>
+                <div class="slide-subtitle">Estructura optimizada por página</div>
+            </div>
+            <div class="content">
+                <h2>H1 Optimizados Implementados</h2>
+
+                <div class="example-box">
+                    <strong>Página Earcuff:</strong><br>
+                    &lt;h1&gt;Earcuff | Ear Cuff en Plata 925 y Oro 18k&lt;/h1&gt;
+                </div>
+
+                <div class="example-box">
+                    <strong>Página Regalos:</strong><br>
+                    &lt;h1&gt;Regalos para Mujer | Accesorios Únicos y Personalizados&lt;/h1&gt;
+                </div>
+
+                <div class="example-box">
+                    <strong>Página Pulseras:</strong><br>
+                    &lt;h1&gt;Pulseras para Mujer | Diseños Modernos en Plata y Oro&lt;/h1&gt;
+                </div>
+
+                <h3>Reglas Aplicadas:</h3>
+                <ul>
+                    <li>Un solo H1 por página</li>
+                    <li>Keyword principal incluida</li>
+                    <li>Diferente al meta title</li>
+                    <li>Contexto específico del contenido</li>
+                    <li>Materiales o características únicas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10: Subtítulos -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 10</div>
+                <div class="slide-title">8. Subtítulos (H2-H6)</div>
+                <div class="slide-subtitle">Jerarquía semántica implementada</div>
+            </div>
+            <div class="content">
+                <h2>Estructura para Página Earcuff</h2>
+                
+                <div class="example-box">
+&lt;h1&gt;Earcuff | Ear Cuff en Plata 925 y Oro 18k&lt;/h1&gt;
+
+&lt;h2&gt;Colección de Earcuff sin Perforación&lt;/h2&gt;
+  &lt;h3&gt;Earcuff de Plata 925&lt;/h3&gt;
+  &lt;h3&gt;Earcuff de Oro 18k&lt;/h3&gt;
+
+&lt;h2&gt;Cómo Usar tu Earcuff Correctamente&lt;/h2&gt;
+  &lt;h3&gt;Guía de Colocación&lt;/h3&gt;
+  &lt;h3&gt;Cuidados Especiales&lt;/h3&gt;
+
+&lt;h2&gt;Comprar Earcuff Online en Colombia&lt;/h2&gt;
+  &lt;h3&gt;Envío Gratis en Bogotá&lt;/h3&gt;
+  &lt;h3&gt;Garantía de Calidad&lt;/h3&gt;
+                </div>
+
+                <h3>Keywords Secundarias Incluidas:</h3>
+                <p><span class="keyword-tag">earcuff sin perforación</span> <span class="keyword-tag">earcuff plata 925</span> <span class="keyword-tag">comprar earcuff online</span> <span class="keyword-tag">cómo usar earcuff</span></p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Párrafo de Introducción -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 11</div>
+                <div class="slide-title">9. Párrafo de Introducción</div>
+                <div class="slide-subtitle">Optimizado por categoría</div>
+            </div>
+            <div class="content">
+                <h2>Párrafos Optimizados (40-60 palabras)</h2>
+
+                <div class="example-box">
+                    <strong>Earcuff (49 palabras):</strong><br>
+                    "Los earcuff son la tendencia en accesorios para mujer que no requiere perforación adicional. En BrazzByRoel encontrarás diseños únicos en plata 925 y oro 18k, perfectos para crear looks modernos y sofisticados. Envío gratis en Bogotá."
+                </div>
+
+                <div class="example-box">
+                    <strong>Regalos para Mujer (42 palabras):</strong><br>
+                    "Encuentra el regalo perfecto para mujer en nuestra colección de accesorios únicos. Más de 500 diseños en plata 925 y oro 18k, desde aretes hasta pulseras personalizadas. Envío express en toda Colombia para sorprender en cualquier ocasión especial."
+                </div>
+
+                <h3>Elementos Optimizados:</h3>
+                <ul>
+                    <li>Keyword principal en primeras palabras</li>
+                    <li>Propuesta de valor clara</li>
+                    <li>Materiales específicos mencionados</li>
+                    <li>Cobertura geográfica incluida</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 12: Lecturabilidad -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 12</div>
+                <div class="slide-title">10. Lecturabilidad</div>
+                <div class="slide-subtitle">Formato optimizado para ecommerce</div>
+            </div>
+            <div class="content">
+                <h2>Estructura de Páginas de Categoría</h2>
+                <ol>
+                    <li><strong>H1 + párrafo introducción</strong> (40-60 palabras)</li>
+                    <li><strong>Grid de productos</strong> (imágenes optimizadas)</li>
+                    <li><strong>H2: Características principales</strong> (lista de beneficios)</li>
+                    <li><strong>H2: Guía de compra</strong> (párrafos de 2-3 líneas)</li>
+                    <li><strong>H2: Envío y garantías</strong> (información práctica)</li>
+                </ol>
+
+                <h3>Formato Optimizado:</h3>
+                <ul>
+                    <li>Máximo 3 líneas por párrafo en móvil</li>
+                    <li>45-75 caracteres por línea</li>
+                    <li>Listas con bullets para características</li>
+                    <li>Texto en negrilla para beneficios clave</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Material Multimedia</h3>
+                    <p>Galería de productos, imágenes de modelo, close-ups de detalles, videos de uso</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Optimización de Imágenes -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 13</div>
+                <div class="slide-title">11. Optimización de Imágenes</div>
+                <div class="slide-subtitle">Específico para ecommerce</div>
+            </div>
+            <div class="content">
+                <h2>Nombres de Archivo Optimizados</h2>
+                <div class="example-box">
+earcuff-plata-925-mujer-brazzbyroel.jpg
+pulsera-oro-18k-ajustable-bogota.jpg
+candongas-grandes-plata-colombia.jpg
+regalo-mujer-accesorios-personalizados.jpg
+                </div>
+
+                <h3>Texto Alternativo por Categoría</h3>
+                <div class="example-box">
+                    <strong>Earcuff:</strong><br>
+                    alt="Earcuff de plata 925 sin perforación para mujer - BrazzByRoel"<br>
+                    alt="Ear cuff dorado modelo moderno para oreja izquierda"
+                </div>
+
+                <h3>Especificaciones Técnicas:</h3>
+                <ul>
+                    <li><strong>Peso máximo:</strong> 150kb (TinyJPG)</li>
+                    <li><strong>Formato:</strong> WebP con fallback JPG</li>
+                    <li><strong>Dimensiones:</strong> 800x800px productos, 1200x600px categorías</li>
+                    <li><strong>Keywords incluidas</strong> en nombre y alt text</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 14: Extensión y Keywords -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 14</div>
+                <div class="slide-title">12-13. Extensión y Uso de Keywords</div>
+                <div class="slide-subtitle">Integración natural y longitudes óptimas</div>
+            </div>
+            <div class="content">
+                <h2>Extensiones Optimizadas</h2>
+                <ul>
+                    <li><strong>Categorías principales:</strong> 600-800 palabras</li>
+                    <li><strong>Nuevas oportunidades:</strong> 800-1,200 palabras</li>
+                    <li><strong>Subcategorías:</strong> 400-600 palabras</li>
+                </ul>
+
+                <h2>Distribución de Keywords</h2>
+                <div class="highlight-box">
+                    <h3>Ejemplo: Página Earcuff (800 palabras)</h3>
+                    <ul>
+                        <li>"earcuff" aparece 8-12 veces naturalmente</li>
+                        <li>"ear cuff" 4-6 veces (variación)</li>
+                        <li>"earcuff plata" 3-4 veces</li>
+                        <li>"sin perforación" 2-3 veces</li>
+                    </ul>
+                </div>
+
+                <h3>Ubicaciones Estratégicas:</h3>
+                <ul>
+                    <li>H1: Keyword principal + modificador</li>
+                    <li>Primer párrafo: Keyword en primeras 25 palabras</li>
+                    <li>H2 y H3: Keywords secundarias</li>
+                    <li>Último párrafo: Keyword + CTA</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 15: Checklist y Resultados -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 15</div>
+                <div class="slide-title">14. Checklist y Resultados Esperados</div>
+                <div class="slide-subtitle">Implementación y seguimiento</div>
+            </div>
+            <div class="content">
+                <h2>Páginas Prioritarias (Fase 1)</h2>
+                <ul>
+                    <li>✅ Earcuff (12,100 búsquedas/mes)</li>
+                    <li>🆕 Regalo para mujer (9,900/mes) - NUEVA URL</li>
+                    <li>✅ Pulseras (8,100/mes)</li>
+                    <li>✅ Candongas (5,400/mes)</li>
+                    <li>✅ Aretes (4,400/mes)</li>
+                </ul>
+
+                <h2>Checklist de Implementación</h2>
+                <div class="example-box">
+□ Keyword principal definida<br>
+□ Título SEO de 50-60 caracteres<br>
+□ Meta description 150-160 caracteres con CTA<br>
+□ URL limpia con keyword principal<br>
+□ H1 único con keyword principal<br>
+□ Estructura H2-H6 con keywords secundarias<br>
+□ Párrafo introducción 40-60 palabras<br>
+□ Imágenes optimizadas con alt text<br>
+□ Keywords integradas naturalmente (1-2% densidad)
+                </div>
+
+                <h2>Resultados Esperados (6 meses)</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">Top 3</div>
+                        <div class="stat-label">para "earcuff"</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Top 5</div>
+                        <div class="stat-label">para "regalo para mujer"</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">keywords en Top 10</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">18,000</div>
+                        <div class="stat-label">visitantes/mes orgánicos</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Próximos Pasos Inmediatos</h3>
+                    <ol>
+                        <li>Revisar auditoría técnica - corregir issues críticos</li>
+                        <li>Implementar títulos y metas - páginas prioritarias primero</li>
+                        <li>Crear URLs nuevas - regalo para mujer y día de la madre</li>
+                        <li>Aplicar estructuras H1-H6 - usar briefs entregados</li>
+                        <li>Optimizar contenido existente - integrar keywords secundarias</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Recursos y Conclusión -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 16</div>
+                <div class="slide-title">Recursos de Implementación</div>
+                <div class="slide-subtitle">Todo listo para usar</div>
+            </div>
+            <div class="content">
+                <h2>Documentos Entregados</h2>
+                <ul>
+                    <li>✅ Excel completo con 1,338 keywords investigadas</li>
+                    <li>✅ 43 clusters organizados por intención de búsqueda</li>
+                    <li>✅ 27 estructuras de headings detalladas por página</li>
+                    <li>✅ Auditoría técnica con 993 factores evaluados</li>
+                    <li>✅ 2 URLs nuevas con potencial de 15,300 búsquedas adicionales</li>
+                    <li>✅ Títulos y meta descriptions optimizados para todas las páginas</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h2>🎯 Potencial Total Identificado</h2>
+                    <p style="font-size: 24px; text-align: center; font-weight: bold;">
+                        54,180 búsquedas mensuales en páginas de servicio
+                    </p>
+                </div>
+
+                <h2>Herramientas de Seguimiento</h2>
+                <ul>
+                    <li><strong>Google Search Console:</strong> Impresiones y clics por keyword</li>
+                    <li><strong>Google Analytics:</strong> Tráfico orgánico y conversiones</li>
+                    <li><strong>Semrush/Ahrefs:</strong> Posiciones de keywords objetivo</li>
+                    <li><strong>PageSpeed Insights:</strong> Velocidad de carga</li>
+                </ul>
+
+                <div style="text-align: center; margin-top: 40px; font-size: 20px; color: #5a67d8;">
+                    <strong>¡Tu ecommerce ya tiene bases sólidas para dominar las búsquedas comerciales!</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">16</span>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prev-btn" onclick="previousSlide()">← Anterior</button>
+        <button class="nav-btn" id="next-btn" onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 16;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            const current = document.getElementById('current-slide');
+            
+            if (n > totalSlides) currentSlide = 1;
+            if (n < 1) currentSlide = totalSlides;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide - 1].classList.add('active');
+            
+            current.textContent = currentSlide;
+            
+            // Update navigation buttons
+            document.getElementById('prev-btn').disabled = currentSlide === 1;
+            document.getElementById('next-btn').disabled = currentSlide === totalSlides;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousSlide();
+            }
+        });
+
+        // Initialize
+        document.getElementById('total-slides').textContent = totalSlides;
+        showSlide(1);
+    </script>
+</body>
+</html>
